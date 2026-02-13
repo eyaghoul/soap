@@ -46,7 +46,7 @@ récupération correcte des informations du compte.
 ### possible fault cases
 
 **unknown account :**
-![Withdraw Unknown Account](images/withdraw_unknownaccount.png)
+![Withdraw Unknown Account](src/main/images/withdraw_unknownaccount.png)
 **unvalid amount :**
 ![Withdraw Invalid Amount](src/main/images/withdraw_unvalid_amount.png)
 **insufficient balance :**
