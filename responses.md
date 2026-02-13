@@ -33,9 +33,10 @@ récupération correcte des informations du compte.
 
 ### possible fault cases
 
-_unknown account :_
-![Unknown Account](src/main/images/unknown_account.png)
-_unvalid amount :_
+**unknown account :**
+![Unknown Account](src/main/images/unknown_accountid.png.png)
+
+**unvalid amount :**
 ![Invalid Amount](src/main/images/unvalid_amount.png)
 
 ## Withdraw
@@ -44,16 +45,16 @@ _unvalid amount :_
 
 ### possible fault cases
 
-_unknown account :_
-![Withdraw Unknown Account](images/withdraw_unknown_account.png)
-_unvalid amount :_
+**unknown account :**
+![Withdraw Unknown Account](images/withdraw_unknownaccount.png)
+**unvalid amount :**
 ![Withdraw Invalid Amount](src/main/images/withdraw_unvalid_amount.png)
-_insufficient balance :_
+**insufficient balance :**
 ![Withdraw Insufficient Balance](src/main/images/solde_insuffisant.png)
 
 # D- Fonctionnalité ajoutée
 
-_Withdraw_ :nouvelle opération permettant de retirer un montant d’un compte existant.
+Withdraw :nouvelle opération permettant de retirer un montant d’un compte existant.
 Le service vérifie que :
 le compte existe,
 le montant est strictement positif,
@@ -61,7 +62,7 @@ le solde est suffisant.
 
 # fichiers modifiés :
 
-_bank.xsd :_ ajout de WithdrawRequest et WithdrawResponse
-_BankService.java :_ methode withdraw()
-*BankEndpoint.java : *implémentation de la méthode withdraw()
-_classes generees jaxb :_ WithdrawRequest et WithdrawResponse
+**bank.xsd :** ajout de WithdrawRequest et WithdrawResponse
+**BankService.java :** methode withdraw()
+**BankEndpoint.java :**implémentation de la méthode withdraw()
+**classes generees jaxb :** WithdrawRequest et WithdrawResponse
