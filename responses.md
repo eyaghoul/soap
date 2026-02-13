@@ -49,7 +49,7 @@ _unknown account :_
 _unvalid amount :_
 ![Withdraw Invalid Amount](src/main/images/withdraw_unvalid_amount.png)
 _insufficient balance :_
-![Withdraw Insufficient Balance](src/main/images/withdraw_insufficient_balance.png)
+![Withdraw Insufficient Balance](src/main/images/solde_insuffisant.png)
 
 # D- Fonctionnalité ajoutée
 
