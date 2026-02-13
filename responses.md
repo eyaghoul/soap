@@ -47,7 +47,6 @@ récupération correcte des informations du compte.
 
 **unknown account :**
 ![Withdraw Unknown Account](images/withdraw_unknownaccount.png)
-
 **unvalid amount :**
 ![Withdraw Invalid Amount](src/main/images/withdraw_unvalid_amount.png)
 **insufficient balance :**
