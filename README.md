@@ -56,3 +56,47 @@ http://localhost:8080/ws/bank.wsdl
   </soapenv:Body>
 </soapenv:Envelope>
 ```
+### Withdraw 
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ban="http://example.com/bank">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ban:WithdrawRequest>
+      <ban:accountId>A100</ban:accountId>
+      <ban:amount>10.0</ban:amount>
+    </ban:WithdrawRequest>
+  </soapenv:Body>
+</soapenv:Envelope>
+```
+
+### Fault (amount <= 0)
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ban="http://example.com/bank">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ban:WithdrawRequest>
+      <ban:accountId>A100</ban:accountId>
+      <ban:amount>-10.0</ban:amount>
+    </ban:WithdrawRequest>
+  </soapenv:Body>
+</soapenv:Envelope>
+```
+
+
+### Fault (unnknown account)
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ban="http://example.com/bank">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ban:WithdrawRequest>
+      <ban:accountId>A10</ban:accountId>
+      <ban:amount>10.0</ban:amount>
+    </ban:WithdrawRequest>
+  </soapenv:Body>
+</soapenv:Envelope>
+```
+
+
