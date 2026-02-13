@@ -1,6 +1,6 @@
 # B- Lecture du Contrat (Analysis)
 
-## 1-définir la structure du message SOAP\*
+## 1-définir la structure du message SOAP
 
 définit les types XML, les éléments de requête et réponse pour le service SOAP.
 
@@ -34,7 +34,7 @@ récupération correcte des informations du compte.
 ### possible fault cases
 
 **unknown account :**
-![Unknown Account](src/main/images/unknown_accountid.png.png)
+![Unknown Account](src/main/images/unknown_accountid.png)
 
 **unvalid amount :**
 ![Invalid Amount](src/main/images/unvalid_amount.png)
@@ -46,7 +46,8 @@ récupération correcte des informations du compte.
 ### possible fault cases
 
 **unknown account :**
-![Withdraw Unknown Account](images/withdraw_unknownaccount.png)
+![Withdraw Unknown Account](images/withdraw_unknownaccountid.png)
+
 **unvalid amount :**
 ![Withdraw Invalid Amount](src/main/images/withdraw_unvalid_amount.png)
 **insufficient balance :**
